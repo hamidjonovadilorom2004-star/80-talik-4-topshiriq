@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creator Collective Demo</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0f1d25;
+        --card: rgba(255, 255, 255, 0.07);
+        --text: #f4efe7;
+        --muted: #c8c2b6;
+        --accent: #ff9d4d;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        background:
+          radial-gradient(circle at top right, rgba(255, 157, 77, 0.22), transparent 24%),
+          linear-gradient(135deg, #0c171d 0%, #13303a 55%, #181411 100%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(1000px, 100%);
+        margin: 0 auto;
+        padding: 40px 20px 60px;
+        display: grid;
+        gap: 18px;
+      }
+
+      .slide {
+        min-height: 70vh;
+        border-radius: 28px;
+        padding: 36px;
+        background: var(--card);
+        border: 1px solid rgba(255,255,255,0.08);
+        backdrop-filter: blur(16px);
+      }
+
+      h1, h2 { margin-top: 0; }
+      h1 { font-size: 3rem; }
+      p, li { color: var(--muted); line-height: 1.7; }
+      .accent { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="slide">
+        <h1>Creator Collective <span class="accent">NFT dApp</span></h1>
+        <p>NFT minting, metadata boshqaruvi va community voting oqimini bitta Web3 mahsulotga birlashtiruvchi demo loyiha.</p>
+      </section>
+
+      <section class="slide">
+        <h2>Muammo va yechim</h2>
+        <ul>
+          <li>Oddiy NFT loyihalarda mint va governance ko‘pincha alohida platformalarda yuradi.</li>
+          <li>Bu dApp ikkisini birlashtirib, creator community uchun yagona tajriba beradi.</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Smart-kontrakt</h2>
+        <ul>
+          <li>ERC-721 NFT minting</li>
+          <li>Mint fee</li>
+          <li>Token URI update</li>
+          <li>Proposal create, vote, execute</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Frontend demo oqimi</h2>
+        <ul>
+          <li>MetaMask wallet ulash</li>
+          <li>NFT mint qilish</li>
+          <li>Proposal yaratish</li>
+          <li>Yes/No vote berish</li>
+          <li>Deadline’dan keyin execute qilish</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Natija</h2>
+        <p>Hardhat testlar o‘tgan, React frontend build bo‘lgan, Git repo tayyor. Real Sepolia deploy va GitHub push uchun RPC, private key va remote kerak bo‘ladi.</p>
+      </section>
+    </main>
+  </body>
+  </html>
